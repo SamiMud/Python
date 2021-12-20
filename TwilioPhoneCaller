@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec 20 14:57:23 2021
+
+@author: sami
+"""
+import numpy as np
+
+from twilio.twiml.voice_response import Dial, Number, VoiceResponse
+
+response = VoiceResponse()
+dial = Dial()
+dial.number('616-577-8881', send_digits='wwwwwwwwwwwwwwww1')
+response.append(dial)
+
+print(response)
+
